@@ -1,0 +1,46 @@
+{
+  "name": "dotenv-to-ts",
+  "version": "0.0.0",
+  "description": "Convert dotenv file to TypeScript type definitions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bang88/dotenv-to-ts.git"
+  },
+  "author": "bang <sqibang@gmail.com>",
+  "bin": {
+    "dotenv-to-ts": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "npm run lint && ava --verbose",
+    "lint": "tslint --project ./tsconfig.json --fix",
+    "start": "tsc -w",
+    "pretest": "tsc"
+  },
+  "typings": "index.d.ts",
+  "keywords": [
+    "cli-app",
+    "cli"
+  ],
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "meow": "^3.7.0",
+    "prettier": "^1.7.4",
+    "tslib": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.8",
+    "@types/dotenv": "^2.0.20",
+    "ava": "^0.18.2",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/bang88/dotenv-to-ts/issues"
+  },
+  "homepage": "https://github.com/bang88/dotenv-to-ts#readme",
+  "main": "index.js"
+}

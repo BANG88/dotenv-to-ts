@@ -1,0 +1,9 @@
+*.ts
+!*.d.ts
+tsconfig.json
+tslint.json
+snapshots*
+.env
+env.d.ts
+.env.example
+example.env.d.ts
